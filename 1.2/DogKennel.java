@@ -3,15 +3,27 @@ class Dog {
     private int age;
 
     Dog(String name, int age) {
-        setName(name); setAge(age);
+        setName(name);
+        setAge(age);
     }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public int getAge() { return age; }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     public void setAge(int age) {
         if (age < 0) throw new IllegalArgumentException("Возраст не может быть отрицательным");
         this.age = age;
     }
+
     public int getHumanAge() { return age * 7; }
     @Override public String toString() {
         return "Dog{name='" + name + "', age=" + age + ", humanAge=" + getHumanAge() + "}";
