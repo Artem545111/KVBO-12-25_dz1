@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-         boolean run = true;
+        boolean run = true;
 
         System.out.println("Цыганков Артём Ярославович, КВБО-12-25");
         System.out.println("Введите номер задания: ");
