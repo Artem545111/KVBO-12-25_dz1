@@ -21,6 +21,9 @@ public class TestBall {
         Ball ball = new Ball();
         ball.setXY(2, 3);
         ball.move(-1, 4);
+
+        ball.getX();
+
         System.out.println(ball);
         System.out.println("x=" + ball.getX() + ", y=" + ball.getY());
         ball.setX(10);
