@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="uml" name="Практическая 7, задание 1">
+    <mxGraphModel dx="1030" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="movable" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=13;strokeColor=#40566b;fillColor=#edf4fb;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Movable&lt;br/&gt;+ moveUp(): void&lt;br/&gt;+ moveDown(): void&lt;br/&gt;+ moveLeft(): void&lt;br/&gt;+ moveRight(): void" vertex="1">
+          <mxGeometry height="150" width="360" x="390" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="point" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=13;strokeColor=#40566b;fillColor=#edf4fb;" value="MovablePoint&lt;br/&gt;- x, y: int&lt;br/&gt;- xSpeed, ySpeed: int&lt;br/&gt;+ MovablePoint(x, y, xSpeed, ySpeed)&lt;br/&gt;+ moveUp/Down/Left/Right()&lt;br/&gt;+ toString(): String" vertex="1">
+          <mxGeometry height="190" width="320" x="20" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rectangle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=13;strokeColor=#40566b;fillColor=#edf4fb;" value="MovableRectangle&lt;br/&gt;- topLeft, bottomRight: MovablePoint&lt;br/&gt;+ MovableRectangle(x1, y1, x2, y2, xSpeed, ySpeed)&lt;br/&gt;+ SpeedTest(): boolean&lt;br/&gt;+ moveUp/Down/Left/Right()&lt;br/&gt;+ toString(): String" vertex="1">
+          <mxGeometry height="200" width="450" x="550" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="point" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#40566b;endArrow=block;endFill=0;dashed=1;" target="movable" value="implements">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="rectangle" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#40566b;endArrow=block;endFill=0;dashed=1;" target="movable" value="implements">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="rectangle" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#40566b;startArrow=diamond;startFill=0;" target="point" value="topLeft, bottomRight">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
